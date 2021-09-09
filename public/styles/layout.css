@@ -6,8 +6,11 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /*
@@ -23,3 +26,25 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+.nav-styles {
+  height: 120px;
+  padding: 1.5em 1.5em 0 1.5em;
+  background-color: #4056a1;
+}
+
+.bungee-font {
+  font-family: "Bungee", sans-serif;
+}
+
+.logo {
+  width: 100vw;
+  color: #ffffff;
+}
+
+.weight-600 {
+  font-weight: 600;
+}
+.weight-300 {
+  font-weight: 300;
+}
