@@ -1,0 +1,14 @@
+.header-styles {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 400px;
+  background-color: #e09a41;
+  margin-bottom: 0.5em;
+}
+
+.user-name {
+  color: #ffffff;
+}

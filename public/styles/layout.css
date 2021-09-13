@@ -27,33 +27,6 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-.nav-styles {
-  display: flex;
-  align-items: flex-end;
-  height: 120px;
-
-  background-color: #4056a1;
-}
-
-.logo {
-  width: 100vw;
-  color: #ffffff;
-  margin: 0 1.5em 1em;
-}
-
-.nav-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  margin-right: 1.5em;
-}
-.write-tweet {
-  color: #ffffff;
-  border: 2px solid pink;
-  min-width: 200px;
-}
-
 .chevron-down {
   color: #ffffff;
 }
@@ -67,4 +40,10 @@ body {
 }
 .weight-300 {
   font-weight: 300;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #e09a41;
 }
