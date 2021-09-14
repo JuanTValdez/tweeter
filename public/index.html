@@ -72,15 +72,27 @@
     </header>
     <main class="container">
       <section class="new-tweet">
-        <!-- <h2>Compose Tweet</h2> -->
+       
         <form class="form-styles" method="POST" action="/tweets" Content-Type: application/x-www-form-urlencoded >
-          <!-- <label for="tweet-text">What are you humming about?</label> -->
+        
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div class="flex-r-between">
             <button class="bungee-font" style="background-color: #4056a1; color: #ffffff" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+        
+         
+      </section>
+      <section>
+        <article class="article-tweet" >
+        <header class="tweet-header">
+          <h5> <span></span>Newton</h5>
+          <h5>@SirIsaac</h5>
+        </header>
+        <div class="tweet">If I have seen further it is by standing on the shoulders of giants</div>
+        <footer ><h6> 10 days ago</h6><h6 class="icons">DD</h6></footer>
+      </article>
       </section>
     </main>
   </body>

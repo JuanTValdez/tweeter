@@ -1,7 +1,11 @@
+.container {
+  padding: 1em;
+}
+
 .form-styles {
   width: 100%;
   border: 3px solid grey;
-  padding: 1em;
+  /* padding: 1em; */
 }
 
 .new-tweet {
@@ -22,9 +26,39 @@
   border-left: none;
   border-right: none;
   resize: none;
-  border-bottom: 6px solid #56514a;
+  border-bottom: 3px solid #56514a;
 }
 
 .counter {
   color: #56514a;
+}
+
+.tweet-header {
+  display: flex;
+  justify-content: space-between;
+  border: 3px dotted lawngreen;
+}
+
+.tweet {
+  border-bottom: 3px solid #56514a;
+}
+
+.article-tweet {
+  border: 3px solid #56514a;
+  margin: 1em 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer.icons {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+}
+
+article:hover {
+  box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
 }
