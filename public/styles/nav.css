@@ -1,8 +1,11 @@
 .nav-styles {
   display: flex;
   align-items: flex-end;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
   height: 120px;
-  width: 100vw;
+  width: 100%;
   background-color: #4056a1;
 }
 

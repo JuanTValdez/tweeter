@@ -2,6 +2,10 @@
   padding: 1em;
 }
 
+.padding-1em {
+  padding: 1em;
+}
+
 .form-styles {
   width: 100%;
   border: 3px solid grey;
@@ -36,15 +40,15 @@
 .tweet-header {
   display: flex;
   justify-content: space-between;
-  border: 3px dotted lawngreen;
+  margin: 0 1em;
 }
 
 .tweet {
-  border-bottom: 3px solid #56514a;
+  border-bottom: 4px solid #56514a;
 }
 
 .article-tweet {
-  border: 3px solid #56514a;
+  border: 4px solid #56514a;
   margin: 1em 0;
 }
 
@@ -61,4 +65,14 @@ footer.icons {
 
 article:hover {
   box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.icons-flex {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 75px;
+}
+
+.icon:hover {
+  color: #d0953b;
 }

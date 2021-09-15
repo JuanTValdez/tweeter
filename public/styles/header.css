@@ -1,12 +1,12 @@
 .header-styles {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   height: 400px;
+
   background-color: #e09a41;
-  margin-bottom: 0.5em;
+  margin: 120px 0px 0.5em 0px;
 }
 
 .user-name {
