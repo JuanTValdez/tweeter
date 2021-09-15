@@ -23,13 +23,17 @@
       rel="stylesheet"
     />
 
-    <link
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/solid.js" integrity="sha384-/BxOvRagtVDn9dJ+JGCtcofNXgQO/CCCVKdMfL115s3gOgQxWaX/tSq5V8dRgsbc" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/fontawesome.js" integrity="sha384-dPBGbj4Uoy1OOpM4+aRGfAOc0W37JkROT+3uynUgTHZCHZNMHfGXsmmvYTffZjYO" crossorigin="anonymous"></script>
+    
+
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    /> -->
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -42,10 +46,7 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-    <script>
-
-      let l = `$(counter)`
-    </script>
+    
   </head>
 
   <body>
@@ -55,11 +56,11 @@
       <span class="logo bungee-font">tweeter</span>
       <div class="nav-links">
         <span class="write-tweet"><strong>Write</strong> a new tweet</span>
+        
+        <i class="fas fa-angle-double-down" style="color: red"></i>
+        
 
-        <i class="fas fa-angle-double-down"></i>
-        <i class="fas fa-chevron-down"></i>
-
-        <i class="chevron-down">&#8964;</i>
+        
       </div>
     </nav>
     <header class="header-styles">
@@ -74,7 +75,7 @@
       <section class="new-tweet">
        
         <form class="form-styles" method="POST" action="/tweets" Content-Type: application/x-www-form-urlencoded >
-        
+          
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div class="flex-r-between">
             <button class="bungee-font" style="background-color: #4056a1; color: #ffffff" type="submit">Tweet</button>
