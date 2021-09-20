@@ -23,11 +23,19 @@
       rel="stylesheet"
     />
 
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/solid.js" integrity="sha384-/BxOvRagtVDn9dJ+JGCtcofNXgQO/CCCVKdMfL115s3gOgQxWaX/tSq5V8dRgsbc" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/fontawesome.js" integrity="sha384-dPBGbj4Uoy1OOpM4+aRGfAOc0W37JkROT+3uynUgTHZCHZNMHfGXsmmvYTffZjYO" crossorigin="anonymous"></script>
-    
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/solid.js"
+      integrity="sha384-/BxOvRagtVDn9dJ+JGCtcofNXgQO/CCCVKdMfL115s3gOgQxWaX/tSq5V8dRgsbc"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/fontawesome.js"
+      integrity="sha384-dPBGbj4Uoy1OOpM4+aRGfAOc0W37JkROT+3uynUgTHZCHZNMHfGXsmmvYTffZjYO"
+      crossorigin="anonymous"
+    ></script>
 
-   
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
@@ -38,8 +46,16 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
-    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      type="text/javascript"
+      src="/scripts/composer-char-counter.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+      integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
 
   <body>
@@ -49,15 +65,11 @@
       <span class="logo bungee-font">tweeter</span>
       <div class="nav-links">
         <span class="write-tweet"><strong>Write</strong> a new tweet</span>
-        
-        <i class="fas fa-angle-double-down" style="color: red"></i>
-        
 
-        
+        <i class="fas fa-angle-double-down" style="color: red"></i>
       </div>
     </nav>
 
-    
     <header class="header-styles">
       <div>
         <img src="/images/profile-hex.png" />
@@ -68,46 +80,60 @@
     </header>
     <main class="container">
       <section class="new-tweet">
-       
-        <form class="form-styles" method="POST" action="/tweets" Content-Type: application/x-www-form-urlencoded >
-          
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+        <form id="createTweetForm" class="form-styles">
+          <textarea
+            name="text"
+            id="tweet-text"
+            placeholder="What are you humming about?"
+          ></textarea>
+          <div class="flex-r-between">
+            <button
+              class="bungee-font"
+              style="background-color: #4056a1; color: #ffffff"
+              type="submit"
+            >
+              Tweet
+            </button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+
+        <!-- <form class="form-styles" method="POST" action="/tweets" Content-Type:
+        application/x-www-form-urlencoded >
+
+        <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div class="flex-r-between">
             <button class="bungee-font" style="background-color: #4056a1; color: #ffffff" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
-        </form>
-        
-         
+        </form>  -->
       </section>
-     
-      <section id="tweets-container">
-        <article class="article-tweet" >
-        <header class="tweet-header">
-          <h5> 
-            
-            <span class="fas fa-poo"></span>
-            <span>Newton</span>
-          
-          
-          </h5>
-          <h5>@SirIsaac</h5>
-        </header>
 
-        <div class="tweet">
-          If I have seen further it is by standing on the shoulders of giants</div>
-        
-          <footer >
-            <h6> 10 days ago</h6>
+      <section id="tweets-container">
+        <article class="article-tweet">
+          <h4>This tweet is hard coded for testing.</h4>
+          <header class="tweet-header">
+            <h5>
+              <span class="fas fa-poo"></span>
+              <span>Newton</span>
+            </h5>
+            <h5>@SirIsaac</h5>
+          </header>
+
+          <div class="tweet">
+            If I have seen further it is by standing on the shoulders of giants
+          </div>
+
+          <footer>
+            <h6>10 days ago</h6>
             <h6 class="icons-flex">
-            <span class="fas fa-flag icon"></span>
-            <span class="fas fa-retweet icon"></span>
-            <span class="fas fa-heart icon"></span>
-          </h6>
-        </footer>
-      </article>
+              <span class="fas fa-flag icon"></span>
+              <span class="fas fa-retweet icon"></span>
+              <span class="fas fa-heart icon"></span>
+            </h6>
+          </footer>
+        </article>
       </section>
-   
     </main>
   </body>
 </html>
