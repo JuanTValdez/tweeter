@@ -81,13 +81,15 @@ $(document).ready(function () {
     // console.log("Length of tweet: " + serializedData.length);
 
     if (serializedData.length === 5) {
-      alert("Tweet cannot be empty!");
+      $("#slide-up").slideDown();
+      // alert("Tweet cannot be empty!");
     } else if (serializedData.length > 145) {
-      alert("Tweet is either too long!");
+      $("#slide-up").slideDown();
+      // alert("Tweet is either too long!");
     } else {
       $.post("/tweets", serializedData).then((res) => {
         // console.log(event);
-
+        $("#slide-up").slideUp();
         loadTweets();
       });
     }

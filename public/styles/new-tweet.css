@@ -14,7 +14,20 @@
 
 .new-tweet {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   /* justify-content: center; */
+}
+
+#error-message {
+  width: 100%;
+  min-height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#error-message p {
+  display: none;
+  margin: 0;
 }
 
 .flex-r-between {
