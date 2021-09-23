@@ -23,12 +23,13 @@ body {
   font-size: 24px;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
-
-.chevron-down {
-  color: #ffffff;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10rem auto 0 auto;
+  background-color: rgb(247, 241, 237);
 }
 
 .bungee-font {
@@ -42,8 +43,26 @@ body {
   font-weight: 300;
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-  background-color: rgb(247, 241, 237);
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
+
+/* Mobile */
+@media only screen and (min-width: 480px) {
+  .container {
+    flex-direction: column;
+    margin-top: 7rem;
+    width: 100%;
+  }
 }
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 11rem auto 0 auto;
+    background-color: rgb(247, 241, 237);
+  }
+} ;

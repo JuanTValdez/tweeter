@@ -70,76 +70,73 @@
       </div>
     </nav>
 
-    <header class="header-styles">
-      <div>
-        <img src="/images/profile-hex.png" />
-      </div>
-      <br />
-      <div class="user-name"><span class="weight-600">Juan </span> Valdez</div>
-      <!-- Page-specific (main) content here -->
-    </header>
     <main class="container">
-      <section class="new-tweet">
-        <div id="error-message">
-          <p id="slide-up" style="color: red">
-            Tweet cannot be empty or longer than 140 characters!
-          </p>
+      <header class="header-styles">
+        <div>
+          <img src="/images/profile-hex.png" />
         </div>
-
-        <form id="createTweetForm" class="form-styles">
-          <textarea
-            name="text"
-            id="tweet-text"
-            placeholder="What are you humming about?"
-          ></textarea>
-          <div class="flex-r-between">
-            <button
-              class="bungee-font"
-              style="background-color: #4056a1; color: #ffffff"
-              type="submit"
-            >
-              Tweet
-            </button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-
-        <!-- <form class="form-styles" method="POST" action="/tweets" Content-Type:
-        application/x-www-form-urlencoded >
-
-        <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-          <div class="flex-r-between">
-            <button class="bungee-font" style="background-color: #4056a1; color: #ffffff" type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>  -->
-      </section>
-
-      <section id="tweets-container">
-        <article class="article-tweet">
-          <h4>This tweet is hard coded for testing.</h4>
-          <header class="tweet-header">
-            <h5>
-              <span class="fas fa-poo"></span>
-              <span>Newton</span>
-            </h5>
-            <h5>@SirIsaac</h5>
-          </header>
-
-          <div class="tweet">
-            If I have seen further it is by standing on the shoulders of giants
+        <br />
+        <div class="user-name">
+          <span class="weight-600">Juan </span> Valdez
+        </div>
+        <!-- Page-specific (main) content here -->
+      </header>
+      <div class="new-tweet">
+        <section class="responsive">
+          <div id="error-message">
+            <p id="slide-up" style="color: red">
+              Tweet cannot be empty or longer than 140 characters!
+            </p>
           </div>
 
-          <footer>
-            <h6>10 days ago</h6>
-            <h6 class="icons-flex">
-              <span class="fas fa-flag icon"></span>
-              <span class="fas fa-retweet icon"></span>
-              <span class="fas fa-heart icon"></span>
-            </h6>
-          </footer>
-        </article>
-      </section>
+          <form id="createTweetForm" class="form-styles">
+            <textarea
+              name="text"
+              id="tweet-text"
+              placeholder="What are you humming about?"
+            ></textarea>
+            <div class="flex-r-between">
+              <button
+                class="bungee-font"
+                style="background-color: #4056a1; color: #ffffff"
+                type="submit"
+              >
+                Tweet
+              </button>
+              <output name="counter" class="counter weight-600" for="tweet-text"
+                >140</output
+              >
+            </div>
+          </form>
+
+          <div id="tweets-container"></div>
+        </section>
+      </div>
     </main>
   </body>
 </html>
+
+<!-- <article class="article-tweet">
+              <h4>This tweet is hard coded for testing.</h4>
+              <header class="tweet-header">
+                <h5>
+                  <span class="fas fa-poo"></span>
+                  <span>Newton</span>
+                </h5>
+                <h5>@SirIsaac</h5>
+              </header>
+
+              <div class="tweet">
+                If I have seen further it is by standing on the shoulders of
+                giants
+              </div>
+
+              <footer>
+                <h6>10 days ago</h6>
+                <h6 class="icons-flex">
+                  <span class="fas fa-flag icon"></span>
+                  <span class="fas fa-retweet icon"></span>
+                  <span class="fas fa-heart icon"></span>
+                </h6>
+              </footer>
+            </article> -->

@@ -77,19 +77,15 @@ $(document).ready(function () {
     event.preventDefault();
 
     const serializedData = $(this).serialize();
-    // console.log("Serialized Data: " + serializedData);
-    // console.log("Length of tweet: " + serializedData.length);
 
     if (serializedData.length === 5) {
       $("#slide-up").slideDown();
-      // alert("Tweet cannot be empty!");
     } else if (serializedData.length > 145) {
       $("#slide-up").slideDown();
-      // alert("Tweet is either too long!");
     } else {
       $.post("/tweets", serializedData).then((res) => {
-        // console.log(event);
         $("#slide-up").slideUp();
+        $("#tweet-text").val("");
         loadTweets();
       });
     }

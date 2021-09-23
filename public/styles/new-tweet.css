@@ -1,26 +1,23 @@
-.container {
-  padding: 1em;
-}
-
 .padding-1em {
   padding: 1em;
 }
 
 .form-styles {
-  width: 100%;
-  border: 3px solid grey;
-  /* padding: 1em; */
 }
 
+.responsive {
+  width: 90%;
+
+  /* margin: 2em 0; */
+}
 .new-tweet {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-}
+  align-items: flex-end;
 
+  flex-grow: 2;
+}
 #error-message {
-  width: 100%;
   min-height: 2rem;
   margin-bottom: 0.5rem;
 }
@@ -38,7 +35,7 @@
 #tweet-text {
   width: 100%;
 
-  background-color: #e09a41;
+  background-color: #f4f1ec;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -48,6 +45,7 @@
 
 .counter {
   color: #56514a;
+  font-weight: bolder;
 }
 
 .tweet-header {
@@ -57,12 +55,15 @@
 }
 
 .tweet {
+  word-wrap: break-word;
   border-bottom: 4px solid #56514a;
 }
 
 .article-tweet {
+  width: 100%;
   border: 4px solid #56514a;
   margin: 1em 0;
+  padding: 1em;
 }
 
 footer {
@@ -89,3 +90,16 @@ article:hover {
 .icon:hover {
   color: #d0953b;
 }
+
+@media screen and (min-width: 480px) {
+  .new-tweet {
+    align-items: center;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .new-tweet {
+    align-items: flex-end;
+    width: 60%;
+  }
+} ;
