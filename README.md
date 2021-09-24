@@ -15,3 +15,10 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- @fortawesome/fontawesome-free: 5.15.4
+- body-parser: 1.15.2
+- chance: 1.0.2
+- express: 4.13.4
+- md5: ^2.1.0
+
+## Screenshots
