@@ -27,7 +27,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
-![Desktop Version](doc/desktop.png)
-![Desktop Version with new tweets](doc/desktop_new_tweets.png)
-![Mobile Version](doc/mobile/png)
-![Mobile Version](doc/mobile_new_tweets.png)
+![Desktop Version](docs/desktop.png)
+![Desktop Version with new tweets](docs/desktop_new_tweets.png)
+![Mobile Version](docs/mobile/png)
+![Mobile Version](docs/mobile_new_tweets.png)
