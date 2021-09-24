@@ -4,8 +4,6 @@
 
 .responsive {
   width: 90%;
-
-  /* margin: 2em 0; */
 }
 .new-tweet {
   display: flex;
