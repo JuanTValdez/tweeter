@@ -19,7 +19,7 @@ This repository is the starter code for the project: Students will fork and clon
 - body-parser: 1.15.2
 - chance: 1.0.2
 - express: 4.13.4
-- md5: ^2.1.0
+- md5: 2.1.0
 
 ## Dev Dependencies
 
@@ -29,5 +29,5 @@ This repository is the starter code for the project: Students will fork and clon
 
 ![Desktop Version](docs/desktop.png)
 ![Desktop Version with new tweets](docs/desktop_new_tweets.png)
-![Mobile Version](docs/mobile/png)
+![Mobile Version](docs/mobile.png)
 ![Mobile Version](docs/mobile_new_tweets.png)
