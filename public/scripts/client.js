@@ -36,7 +36,9 @@ $(document).ready(function () {
   };
 
   const createTweetElement = function (tweetObj) {
-    const $name = $("<span>").text(" " + `${tweetObj.user.name}`);
+    const $name = $("<span>")
+      .addClass("margin-left-half-rem")
+      .text(" " + `${tweetObj.user.name}`);
     const $avatars = $(
       `<img src="${tweetObj.user.avatars}" width:"${10}" height:"${25}">`
     );

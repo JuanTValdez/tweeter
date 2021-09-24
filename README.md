@@ -21,4 +21,13 @@ This repository is the starter code for the project: Students will fork and clon
 - express: 4.13.4
 - md5: ^2.1.0
 
+## Dev Dependencies
+
+- Nodemon
+
 ## Screenshots
+
+![Desktop Version](doc/desktop.png)
+![Desktop Version with new tweets](doc/desktop_new_tweets.png)
+![Mobile Version](doc/mobile/png)
+![Mobile Version](doc/mobile_new_tweets.png)
