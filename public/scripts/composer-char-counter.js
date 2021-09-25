@@ -1,17 +1,19 @@
+// Increase and decrease character counter.
+// Changes to red if greater than 140 chars.
+
 let count = 140;
 
-const counterText = document.getElementById("tweet-text");
 $(document).ready(function () {
-  // --- our code goes here ---
-
   const textArea = $("textarea#tweet-text");
 
   $("#tweet-text").on("input", function () {
-    if (textArea.val().length >= 0 && textArea.val().length <= 140) {
+    let counter = count - textArea.val().length;
+
+    if (counter >= 0) {
+      $(".counter").html(counter);
       $(".counter").css({ color: "#56514a" });
-      $(".counter").html(textArea.val().length);
     } else {
-      $(".counter").html(textArea.val().length);
+      $(".counter").html(counter);
       $(".counter").css({ color: "red" });
     }
   });

@@ -1,8 +1,4 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
+// Fetch tweets
 
 $(document).ready(function () {
   const loadTweets = function () {
@@ -35,6 +31,8 @@ $(document).ready(function () {
     }
   };
 
+  // Creates list of tweets at runtime.
+
   const createTweetElement = function (tweetObj) {
     const $name = $("<span>")
       .addClass("margin-left-half-rem")
@@ -46,6 +44,8 @@ $(document).ready(function () {
     const $content = $("<div>")
       .addClass("output-tweet")
       .text(`${tweetObj.content.text}`);
+
+    // Display how long it's been since tweak was posted
     const $createdAt = $("<h6>").text(
       `${timeago.format(tweetObj.user.created_at)}`
     );
@@ -72,13 +72,16 @@ $(document).ready(function () {
     return $article;
   };
 
+  // Form - allows submission of form and checks for errors.
+
   const form = $("#createTweetForm");
   form.on("submit", function (event) {
     event.preventDefault();
 
     const serializedData = $(this).serialize();
 
-    if (serializedData.length === 5) {
+    // Checks if tweet input is empty and if greater than 140 characters
+    if (serializedData.length <= 5) {
       $("#slide-up").slideDown();
     } else if (serializedData.length > 145) {
       $("#slide-up").slideDown();
@@ -86,10 +89,13 @@ $(document).ready(function () {
       $.post("/tweets", serializedData).then((res) => {
         $("#slide-up").slideUp();
         $("#tweet-text").val("");
+        // Refetch tweets after submission
         loadTweets();
       });
     }
   });
+
+  // Fetch initial tweets on runtime
 
   loadTweets();
 });

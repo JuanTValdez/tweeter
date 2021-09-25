@@ -2,16 +2,12 @@
   margin-left: 0.5rem;
 }
 
-.responsive {
+.width-90 {
   width: 90%;
 }
-.new-tweet {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
 
-  flex-grow: 2;
-}
+/* Input error message styles */
+
 #error-message {
   min-height: 2rem;
   margin-bottom: 0.5rem;
@@ -27,8 +23,21 @@
   justify-content: space-between;
 }
 
+/* Form container */
+
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  flex-grow: 2;
+}
+
+/* Input Styles */
+
 #tweet-text {
   width: 100%;
+  max-height: 2.1em;
   background-color: #f4f1ec;
   border-top: none;
   border-left: none;
@@ -52,15 +61,21 @@
 
 .output-tweet {
   word-wrap: break-word;
-
-  border-bottom: 2px solid #56514a;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #56514a;
 }
+
+/* Container for users tweet */
 
 .article-tweet {
   width: 100%;
   border: 4px solid #56514a;
   margin: 1rem 0;
   padding: 0 1rem;
+}
+
+article:hover {
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 0.3);
 }
 
 footer {
@@ -73,10 +88,6 @@ footer.icons {
   height: 50px;
   width: 50px;
   background-color: green;
-}
-
-article:hover {
-  box-shadow: 3px 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .icons-flex {
