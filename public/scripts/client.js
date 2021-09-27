@@ -1,3 +1,5 @@
+const charCount = 104;
+
 // Fetch tweets
 
 $(document).ready(function () {
@@ -8,6 +10,7 @@ $(document).ready(function () {
       datatype: "json",
       success: (tweets) => {
         renderTweets(tweets);
+        // $(".counter").html(charCount);
       },
       error: (error) => {
         console.log(error);
@@ -79,16 +82,22 @@ $(document).ready(function () {
     event.preventDefault();
 
     const serializedData = $(this).serialize();
+    let textLength = serializedData.length - 5;
 
-    // Checks if tweet input is empty and if greater than 140 characters
-    if (serializedData.length <= 5) {
+    // Checks if tweet input is empty and if greater than 104 characters
+
+    if (textLength <= 0) {
+      $("#slide-up").html("Tweet cannot be empty!");
       $("#slide-up").slideDown();
-    } else if (serializedData.length > 145) {
+    } else if (textLength > 104) {
+      $("#slide-up").html("Tweet cannot be greater than 104 characters");
       $("#slide-up").slideDown();
     } else {
       $.post("/tweets", serializedData).then((res) => {
         $("#slide-up").slideUp();
+        $(".counter").html(charCount);
         $("#tweet-text").val("");
+
         // Refetch tweets after submission
         loadTweets();
       });
