@@ -1,7 +1,7 @@
 // Increase and decrease character counter.
 // Changes to red if greater than 140 chars.
 
-let count = 104;
+let count = 140;
 
 $(document).ready(function () {
   const textArea = $("textarea#tweet-text");

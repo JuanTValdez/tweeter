@@ -1,4 +1,4 @@
-const charCount = 104;
+const charCount = 140;
 
 // Fetch tweets
 
@@ -49,9 +49,7 @@ $(document).ready(function () {
       .text(`${tweetObj.content.text}`);
 
     // Display how long it's been since tweak was posted
-    const $createdAt = $("<h6>").text(
-      `${timeago.format(tweetObj.user.created_at)}`
-    );
+    const $createdAt = $("<h6>").text(`${timeago.format(tweetObj.created_at)}`);
 
     const $article = $("<article>").addClass("article-tweet");
     const $header = $("<header>").addClass("tweet-header");
@@ -89,8 +87,10 @@ $(document).ready(function () {
     if (textLength <= 0) {
       $("#slide-up").html("Tweet cannot be empty!");
       $("#slide-up").slideDown();
-    } else if (textLength > 104) {
-      $("#slide-up").html("Tweet cannot be greater than 104 characters");
+    } else if (textLength > charCount) {
+      $("#slide-up").html(
+        `Tweet cannot be greater than ${charCount} characters`
+      );
       $("#slide-up").slideDown();
     } else {
       $.post("/tweets", serializedData).then((res) => {
